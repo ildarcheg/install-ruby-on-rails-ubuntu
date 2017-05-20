@@ -105,6 +105,14 @@ rails g scaffold car make color year:integer
 rake db:migrate
 ```
 
+orking with ActiveRecord. Add table to DB using model
+```
+rails new fancy_car
+cd fancy_car
+rails g model car make color year:integer
+rake db:migrate
+```
+
 Working with ActiveRecord. Changing tables (add columns)
 ```
 cd fancy_car
