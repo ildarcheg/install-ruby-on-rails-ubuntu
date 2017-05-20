@@ -127,13 +127,7 @@ rails g migration rename_make_to_company
 rake db:migrate
 ```
 
-Time zone
-```ruby
- config.time_zone='Hanoi'
- config.active_record.default_timezone=:local
-```
-
-SQLite
+Working with ActiveRecord. SQLite
 ```
 sudo apt-get install sqlite3
 cd fancy_car
@@ -146,9 +140,45 @@ select * from cars;
 .exit
 ```
 
+Working with ActiveRecord. SQLite - create rows
+```
+sudo apt-get install sqlite3
+cd fancy_car
+rails c
+p1 = Person.new; p1.first_name = "Joe"; p1.last_name = "Fox"; p1.save
+p2 = Person.new(first_name = "Joe", last_name = "Fox"); p1.save
+p3 = Person.create(first_name = "Joe", last_name = "Fox")
+
+person_joe = Person.find(0)
+person_all = Person.all #not an Array
+person_first = Person.all.order(first_name: :desc).to_a
+
+person_random = Person.take
+person_two_random = Person.take 2
+
+person_names = Person.all.map { |person| person.first_name} #gets all records and only one column from it
+person_names = Person.pluck(:first_name) #gets only one column
+
+persons_with_name_joe = Person.where(last_name: "Doe")
+persons_with_name_joe = Person.where(last_name: "Doe").first # performs as Limit 1
+persons_with_name_joe = Person.where(last_name: "Doe")[0] # performs as ALL and select only one record
+
+person_joe = Person.find_by(last_name: "Doe") # gets only one record or nil
+person_joe = Person.find_by!(last_name: "Doe") # gets only one record or exeption
+
+person_count = Person.count
+person_not_from_begining = Person.offset(1).limit(1) # skip some records and get 1
+```
+
 SQLite browser
 ```
 sudo add-apt-repository -y ppa:linuxgndu/sqlitebrowser
 sudo apt-get update
 sudo apt-get install sqlitebrowser
+```
+
+Time zone
+```ruby
+ config.time_zone='Hanoi'
+ config.active_record.default_timezone=:local
 ```
