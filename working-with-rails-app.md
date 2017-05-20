@@ -140,7 +140,7 @@ select * from cars;
 .exit
 ```
 
-Working with ActiveRecord. SQLite - create rows
+Working with ActiveRecord. SQLite - create rows and retrive rows
 ```
 sudo apt-get install sqlite3
 cd fancy_car
@@ -168,6 +168,15 @@ person_joe = Person.find_by!(last_name: "Doe") # gets only one record or exeptio
 
 person_count = Person.count
 person_not_from_begining = Person.offset(1).limit(1) # skip some records and get 1
+```
+
+Working with ActiveRecord. SQLite - update rows and delete rows
+```
+sudo apt-get install sqlite3
+cd fancy_car
+rails c
+person_max = Person.find_by(first_name: "Max"); person_max.last_name="Bush"; person_max.save
+person_max = Person.find_by(first_name: "Max").update(last_name: "Clinton")
 ```
 
 SQLite browser
