@@ -96,3 +96,24 @@ heroku create your_app_name
 git push heroku master
 heroku config:set FOOD2FORK_KEY=<"35266a74b902afca9b63150995cdcd0e"
 ```
+
+Scaffold 
+```
+rails new fancy_car
+cd fancy_car
+rails g scaffold car make color year:integer
+rake db:migrate
+```
+
+SQLite
+```
+sudo apt-get install sqlite3
+cd fancy_car
+rails db
+.help
+.tables
+.headers on
+.mode columns
+select * from cars;
+.exit
+```
