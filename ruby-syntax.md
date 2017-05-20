@@ -47,4 +47,36 @@ puts digits.reject {|i| i < 5 }  # [5, 6, 7, 8, 9]
 ('a'..'j') === 'c'  -> true  
 ('a'..'j') === 'z'  -> false
 ```
+
+Dynamic 1
+```ruby
+class Dog 
+	def bark
+		puts "Woof, Woof!"
+	end
+
+	def greet(greeting)
+		puts greeting
+	end
+end
+
+dog = Dog.new
+dog.bark
+dog.send("bark")
+dog.send(:bark)
+method_name = "greet"
+dog.send(method_name, 'Hi friend')
+```
  
+ Dynamic 2
+```ruby
+class Person
+	attr_accessor :name, :age
+end
+
+person = Person.new
+props = { name: "John", age: 15}
+props.each { |key, value| puts person.send("#{key}=", value)} 
+
+person
+```
