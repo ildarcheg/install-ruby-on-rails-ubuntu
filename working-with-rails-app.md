@@ -97,12 +97,32 @@ git push heroku master
 heroku config:set FOOD2FORK_KEY=<"35266a74b902afca9b63150995cdcd0e"
 ```
 
-Scaffold 
+Working with ActiveRecord. Add table to DB using scaffold
 ```
 rails new fancy_car
 cd fancy_car
 rails g scaffold car make color year:integer
 rake db:migrate
+```
+
+Working with ActiveRecord. Changing tables (add columns)
+```
+cd fancy_car
+rails g migration add_price_to_cars 'price:decimal{10,2}'
+rake db:migrate
+```
+
+Working with ActiveRecord. Changing tables (rename columns)
+```
+cd fancy_car
+rails g migration rename_make_to_company
+rake db:migrate
+```
+
+Time zone
+```ruby
+ config.time_zone='Hanoi'
+ config.active_record.default_timezone=:local
 ```
 
 SQLite
@@ -116,4 +136,11 @@ rails db
 .mode columns
 select * from cars;
 .exit
+```
+
+SQLite browser
+```
+sudo add-apt-repository -y ppa:linuxgndu/sqlitebrowser
+sudo apt-get update
+sudo apt-get install sqlitebrowser
 ```
