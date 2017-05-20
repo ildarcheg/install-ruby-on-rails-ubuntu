@@ -146,8 +146,8 @@ sudo apt-get install sqlite3
 cd fancy_car
 rails c
 p1 = Person.new; p1.first_name = "Joe"; p1.last_name = "Fox"; p1.save
-p2 = Person.new(first_name = "Joe", last_name = "Fox"); p1.save
-p3 = Person.create(first_name = "Joe", last_name = "Fox")
+p2 = Person.new(first_name: "Joe", last_name: "Fox"); p2.save # should be hash
+p3 = Person.create(first_name: "Joe", last_name: "Fox") # shoud be hash
 
 person_joe = Person.find(0)
 person_all = Person.all #not an Array
