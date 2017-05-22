@@ -311,6 +311,16 @@ class PersonalInfo < ActiveRecord::Base
 end
 ```
 
+```ruby
+bill = Person.find_by lats_name: "Gates"
+bill.build_personal_info height: 6.0 weight: 180 # erase person_id in record in personal_info but do not add new person_record till saved
+bill.save # add record in persona_info
+
+bill.create_personal_info height: 5.0 weight: 170 # update record in personal_info but do not add new till saved
+```
+
+
+
 
 ### SQLite browser
 Install sqlitebrowser for DB view 
