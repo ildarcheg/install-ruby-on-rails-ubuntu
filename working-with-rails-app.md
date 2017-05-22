@@ -459,6 +459,7 @@ programming = Hobby.create name: "Programming"
 bill.hobbies << programming; nick.hobbies << programming
 ```
 
+
 ### ActiveRecord. Scopes
 Setup default behavior for the table-class using default scopes and named scopes
 ```ruby
@@ -477,6 +478,43 @@ class Person < ActiveRecord::Base
   
   scope :ordered_by_age, -> { order age: :desc}
   scope :starts_with, -> (starting_string){ where("first_name LIKE ?", "#{starting_string}%")}
+end
+```
+
+
+### ActiveRecord. Validations
+Check incoming values
+```ruby
+# app/models/job.rb
+class Job < ActiveRecord::Base
+  belongs_to :person
+  has_one :salary_range
+
+  validates :title, :company, presence: true
+
+end
+```
+
+```ruby
+:numericality
+:length
+:format
+:inclusion
+:exclusion
+```
+
+```ruby
+# app/models/salary_range.rb
+class SalaryRange < ActiveRecord::Base
+  belongs_to :job
+
+  validate :min_is_less_than_max
+
+  def min_is_less_than_max
+    if min_salary > max_salary
+      errors.add(:min_salary, "cannot be greater than maximum salary!")
+    end
+  end
 end
 ```
 
