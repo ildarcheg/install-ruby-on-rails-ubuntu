@@ -6,7 +6,8 @@ Directory my_first_app will be created
 rails new my_first_app
 ```
 
-Create Git repo
+### Create Git repo
+Initialize git repo once app is created
 ```
 cd my_first_app
 git init
@@ -14,14 +15,17 @@ git add .
 git commit -m "Initial commit"
 ```
 
-Run Rails app
+### Run Rails app
+Start rails server in separate terminal session
 ```
 rails server
 ```
 
-
+### Generate a controller
 Generate a controller (named 'greeter' wirh action 'hello'), use 'g' for 'generate'
-rails generate controller greeter hello  
+```
+rails g controller greeter hello 
+```
 
 ```
 create  app/controllers/greeter_controller.rb
@@ -41,7 +45,8 @@ invoke    scss
 create      app/assets/stylesheets/greeter.scss
 ```
 
-Routes in config/routes.rb
+### Routes
+Check routes in config/routes.rb
 ```ruby
 get 'courses/index'
 get 'greeter/hello' => "greeter#hello"
@@ -49,20 +54,22 @@ get 'greeter/goodbye'
 root 'courses#index'
 ```
 
-Rake
+### Rake
+Use rake for what?
 ```
 rake --tasks
 rake --describe routes
 rake routes
 ```
 
-Gemfile
+### Gemfile
+Setup all required gems in Gemfile. Run 'bundle' in app folder after changing Gemfile
 ```ruby
 gem 'httparty', '0.13.5'
 ```
-run 'bundle' in app folder after changing Gemfile
 
-HTTParty 
+### HTTParty 
+Use HTTParty for http requetss
 ```ruby
 require 'httparty'
 require 'pp'
@@ -80,7 +87,8 @@ end
 pp Recipe.for "chocolate"
 ```
 
-Heroku install
+### Heroku. Install
+Install Heroku using folowing code (get updated code on Heroku.com)
 ```
 sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
@@ -89,7 +97,8 @@ sudo apt-get install heroku
 heroku --version
 ```
 
-Heroku create app
+### Heroku. Create app
+Go to app folder, login and create heroku app using unique name
 ```
 cd ~/your_app_folder
 heroku login
@@ -98,7 +107,8 @@ git push heroku master
 heroku config:set FOOD2FORK_KEY=<"35266a74b902afca9b63150995cdcd0e"
 ```
 
-Working with ActiveRecord. Add table to DB using scaffold
+### ActiveRecord. Add table 1.
+Add new table to DB using scaffold
 ```
 rails new fancy_car
 cd fancy_car
@@ -106,7 +116,8 @@ rails g scaffold car make color year:integer
 rake db:migrate
 ```
 
-orking with ActiveRecord. Add table to DB using model
+### ActiveRecord. Add table 2.
+Add table to DB using model
 ```
 rails new fancy_car
 cd fancy_car
@@ -114,21 +125,42 @@ rails g model car make color year:integer
 rake db:migrate
 ```
 
-Working with ActiveRecord. Changing tables (add columns)
+### ActiveRecord. Changing tables
+Add columns to table using migration
 ```
 cd fancy_car
 rails g migration add_price_to_cars 'price:decimal{10,2}'
 rake db:migrate
 ```
 
-Working with ActiveRecord. Changing tables (rename columns)
+```ruby
+# db/migrate/20170520111336_add_price_to_cars.rb
+class AddPriceToCars < ActiveRecord::Migration
+  def change
+    add_column :cars, :price, :decimal, precision: 10, scale: 2
+  end
+end
+```
+
+### ActiveRecord. Changing tables
+Rename columns in table using migration
 ```
 cd fancy_car
 rails g migration rename_make_to_company
 rake db:migrate
 ```
 
-Working with ActiveRecord. SQLite
+```ruby
+# db/migrate/20170520112217_rename_make_to_company.rb
+class RenameMakeToCompany < ActiveRecord::Migration
+  def change
+  	rename_column :cars, :make, :company
+  end
+end
+```
+
+### ActiveRecord. SQLite
+Check databases and tables using 'rails db'
 ```
 sudo apt-get install sqlite3
 cd fancy_car
@@ -141,9 +173,13 @@ select * from cars;
 .exit
 ```
 
-Working with ActiveRecord. SQLite - create rows and retrive rows
+### ActiveRecord. SQLite create and retrive
+Create and retrive records using following code
 ```
 sudo apt-get install sqlite3
+```
+
+```
 cd fancy_car
 rails c
 p1 = Person.new; p1.first_name = "Joe"; p1.last_name = "Fox"; p1.save
@@ -171,19 +207,25 @@ person_count = Person.count
 person_not_from_begining = Person.offset(1).limit(1) # skip some records and get 1
 ```
 
-Working with ActiveRecord. SQLite - update rows and delete rows
+### ActiveRecord. SQLite update and delete
+Update and delete records using following code
 ```
 sudo apt-get install sqlite3
+```
+
+```
 cd fancy_car
 rails c
 person_max = Person.find_by(first_name: "Max"); person_max.last_name="Bush"; person_max.save
 person_max = Person.find_by(first_name: "Max").update(last_name: "Clinton")
 ```
 
-Working with ActiveRecord. Seeding the Database 
+### ActiveRecord. Seeding the Database 
+Setup sample records for your database
 ```
 rake db:seed
 ```
+
 ```
 Job.destroy_all
 Person.destroy_all
@@ -217,7 +259,7 @@ Person.last.jobs.create! [
 ]
 ```
 
-Working with ActiveRecord. One-to-One 
+### ActiveRecord. One-to-One 
 ```
 rails g model personal_info height:float weight:float person:references
 ```
@@ -251,14 +293,16 @@ class PersonalInfo < ActiveRecord::Base
 end
 ```
 
-SQLite browser
+### SQLite browser
+Install sqlitebrowser for DB view 
 ```
 sudo add-apt-repository -y ppa:linuxgndu/sqlitebrowser
 sudo apt-get update
 sudo apt-get install sqlitebrowser
 ```
 
-Time zone
+### Time zone
+Setup time zone
 ```ruby
  config.time_zone='Hanoi'
  config.active_record.default_timezone=:local
