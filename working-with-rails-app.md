@@ -1,6 +1,7 @@
 # Working with Rails App
 
-Create new Rails app
+### Create new Rails app
+Directory my_first_app will be created
 ```
 rails new my_first_app
 ```
