@@ -364,6 +364,48 @@ p1.jobs = list_of_person_jobs # will replace with a new array of jobs
 ```
 
 
+### ActiveRecord. Many-to-Many 
+```
+rails g model hobby name
+rake db:migrate
+rails g migration create_hobbies_people person:references hobby:references
+# do not run 'rake db:migrate' till update db/migrate/20170521133616_create_hobbies_people.rb with 'id: false'
+```
+
+```ruby
+# db/migrate/20170521133616_create_hobbies_people.rb
+class CreateHobbiesPeople < ActiveRecord::Migration
+  def change
+    create_table :hobbies_people, id: false do |t|
+      t.references :person, index: true, foreign_key: true
+      t.references :hobby, index: true, foreign_key: true
+    end
+  end
+end
+```
+
+```ruby
+# app/models/person.rb
+class Person < ActiveRecord::Base
+	has_and_belongs_to_many :hobbies
+end
+
+```
+
+```ruby
+# app/models/hobby.rb
+class Hobby < ActiveRecord::Base
+	has_and_belongs_to_many :people
+end
+```
+
+```ruby
+bill = Person.find_by first_name: "Bill"
+nick = Person.find_by first_name: "Nick"
+programming = Hobby.create name: "Programming"
+bill.hobbies << programming; nick.hobbies << programming
+```
+
 
 ### SQLite browser
 Install sqlitebrowser for DB view 
