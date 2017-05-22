@@ -320,6 +320,49 @@ bill.create_personal_info height: 5.0 weight: 170 # update record in personal_in
 ```
 
 
+### ActiveRecord. One-to-Many 
+```
+rails g model job title company position_if person:references
+```
+
+```ruby
+# db/migrate/20170521125626_create_jobs.rb
+class CreateJobs < ActiveRecord::Migration
+  def change
+    create_table :jobs do |t|
+      t.string :title
+      t.string :company
+      t.string :position_id
+      t.references :person, index: true, foreign_key: true
+
+      t.timestamps null: false
+    end
+  end
+end
+```
+
+```ruby
+# app/models/person.rb
+class Person < ActiveRecord::Base
+  has_many :jobs
+  has_many :my_jobs, class_name: "Job"
+end
+```
+
+```ruby
+# app/models/job.rb
+class Job < ActiveRecord::Base
+  belongs_to :person
+end
+```
+
+```ruby
+Job.create company: "MS", title: "Developer", position_id: "#1234"
+p1 = Person.first
+p1.jobs << Job.first # will append
+p1.jobs = list_of_person_jobs # will replace with a new array of jobs
+```
+
 
 
 ### SQLite browser
