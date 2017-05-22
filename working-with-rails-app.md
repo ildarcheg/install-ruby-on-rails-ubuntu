@@ -192,11 +192,11 @@ select * from cars;
 Create and retrive records using following code
 ```
 sudo apt-get install sqlite3
-```
-
-```
 cd fancy_car
 rails c
+```
+
+```ruby
 p1 = Person.new; p1.first_name = "Joe"; p1.last_name = "Fox"; p1.save
 p2 = Person.new(first_name: "Joe", last_name: "Fox"); p2.save # should be hash
 p3 = Person.create(first_name: "Joe", last_name: "Fox") # shoud be hash
@@ -237,13 +237,21 @@ person_max = Person.find_by(first_name: "Max").update(last_name: "Clinton")
 ```
 
 
+### ActiveRecord. SQLite Where
+Use array or hash method for conditions
+```ruby
+Person.where("age BETWEEN ? and ?, 18, 40).to_a
+Person.where("age BETWEEN :min_age and :max_age, min_age:18, max_age:40).to_a
+```
+
+
 ### ActiveRecord. Seeding the Database 
 Setup sample records for your database
 ```
 rake db:seed
 ```
 
-```
+```ruby
 Job.destroy_all
 Person.destroy_all
 
@@ -449,14 +457,6 @@ class Person < ActiveRecord::Base
     aprox_salaries.maximum(:max_salary)
   end
 end
-```
-
-
-```ruby
-bill = Person.find_by first_name: "Bill"
-nick = Person.find_by first_name: "Nick"
-programming = Hobby.create name: "Programming"
-bill.hobbies << programming; nick.hobbies << programming
 ```
 
 
