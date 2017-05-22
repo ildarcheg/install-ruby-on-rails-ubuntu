@@ -6,6 +6,7 @@ Directory my_first_app will be created
 rails new my_first_app
 ```
 
+
 ### Create Git repo
 Initialize git repo once app is created
 ```
@@ -15,11 +16,13 @@ git add .
 git commit -m "Initial commit"
 ```
 
+
 ### Run Rails app
 Start rails server in separate terminal session
 ```
 rails server
 ```
+
 
 ### Generate a controller
 Generate a controller (named 'greeter' wirh action 'hello'), use 'g' for 'generate'
@@ -45,6 +48,7 @@ invoke    scss
 create      app/assets/stylesheets/greeter.scss
 ```
 
+
 ### Routes
 Check routes in config/routes.rb
 ```ruby
@@ -54,6 +58,7 @@ get 'greeter/goodbye'
 root 'courses#index'
 ```
 
+
 ### Rake
 Use rake for what?
 ```
@@ -62,11 +67,13 @@ rake --describe routes
 rake routes
 ```
 
+
 ### Gemfile
 Setup all required gems in Gemfile. Run 'bundle' in app folder after changing Gemfile
 ```ruby
 gem 'httparty', '0.13.5'
 ```
+
 
 ### HTTParty 
 Use HTTParty for http requetss
@@ -87,6 +94,7 @@ end
 pp Recipe.for "chocolate"
 ```
 
+
 ### Heroku. Install
 Install Heroku using folowing code (get updated code on Heroku.com)
 ```
@@ -96,6 +104,7 @@ sudo apt-get update
 sudo apt-get install heroku
 heroku --version
 ```
+
 
 ### Heroku. Create app
 Go to app folder, login and create heroku app using unique name
@@ -107,6 +116,7 @@ git push heroku master
 heroku config:set FOOD2FORK_KEY=<"35266a74b902afca9b63150995cdcd0e"
 ```
 
+
 ### ActiveRecord. Add table 1.
 Add new table to DB using scaffold
 ```
@@ -116,6 +126,7 @@ rails g scaffold car make color year:integer
 rake db:migrate
 ```
 
+
 ### ActiveRecord. Add table 2.
 Add table to DB using model
 ```
@@ -124,6 +135,7 @@ cd fancy_car
 rails g model car make color year:integer
 rake db:migrate
 ```
+
 
 ### ActiveRecord. Changing tables
 Add columns to table using migration
@@ -142,6 +154,7 @@ class AddPriceToCars < ActiveRecord::Migration
 end
 ```
 
+
 ### ActiveRecord. Changing tables
 Rename columns in table using migration
 ```
@@ -159,6 +172,7 @@ class RenameMakeToCompany < ActiveRecord::Migration
 end
 ```
 
+
 ### ActiveRecord. SQLite
 Check databases and tables using 'rails db'
 ```
@@ -172,6 +186,7 @@ rails db
 select * from cars;
 .exit
 ```
+
 
 ### ActiveRecord. SQLite create and retrive
 Create and retrive records using following code
@@ -207,6 +222,7 @@ person_count = Person.count
 person_not_from_begining = Person.offset(1).limit(1) # skip some records and get 1
 ```
 
+
 ### ActiveRecord. SQLite update and delete
 Update and delete records using following code
 ```
@@ -219,6 +235,7 @@ rails c
 person_max = Person.find_by(first_name: "Max"); person_max.last_name="Bush"; person_max.save
 person_max = Person.find_by(first_name: "Max").update(last_name: "Clinton")
 ```
+
 
 ### ActiveRecord. Seeding the Database 
 Setup sample records for your database
@@ -259,6 +276,7 @@ Person.last.jobs.create! [
 ]
 ```
 
+
 ### ActiveRecord. One-to-One 
 ```
 rails g model personal_info height:float weight:float person:references
@@ -293,6 +311,7 @@ class PersonalInfo < ActiveRecord::Base
 end
 ```
 
+
 ### SQLite browser
 Install sqlitebrowser for DB view 
 ```
@@ -300,6 +319,7 @@ sudo add-apt-repository -y ppa:linuxgndu/sqlitebrowser
 sudo apt-get update
 sudo apt-get install sqlitebrowser
 ```
+
 
 ### Time zone
 Setup time zone
