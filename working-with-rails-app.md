@@ -407,6 +407,63 @@ bill.hobbies << programming; nick.hobbies << programming
 ```
 
 
+### ActiveRecord. Many-to-Many through
+```
+rails g model salary_range min_salary:float max_salary:float job:references
+rake db:migrate
+
+rails g migration create_hobbies_people person:references hobby:references
+# do not run 'rake db:migrate' till update db/migrate/20170521133616_create_hobbies_people.rb with 'id: false'
+```
+
+```ruby
+# db/migrate/20170521141424_create_salary_ranges.rb
+class CreateSalaryRanges < ActiveRecord::Migration
+  def change
+    create_table :salary_ranges do |t|
+      t.float :min_salary
+      t.float :max_salary
+      t.references :job, index: true, foreign_key: true
+
+      t.timestamps null: false
+    end
+  end
+end
+```
+
+```ruby
+# app/models/job.rb
+class Job < ActiveRecord::Base
+  has_one :salary_range
+end
+```
+
+```ruby
+# app/models/salary_range.rb
+class SalaryRange < ActiveRecord::Base
+  belongs_to :job
+end
+```
+
+```ruby
+# app/models/person.rb
+class Person < ActiveRecord::Base
+  has_many :aprox_salaries, through: :jobs, source: :salary_range
+  def max_salary
+    aprox_salaries.maximum(:max_salary)
+  end
+end
+```
+
+
+```ruby
+bill = Person.find_by first_name: "Bill"
+nick = Person.find_by first_name: "Nick"
+programming = Hobby.create name: "Programming"
+bill.hobbies << programming; nick.hobbies << programming
+```
+
+
 ### SQLite browser
 Install sqlitebrowser for DB view 
 ```
