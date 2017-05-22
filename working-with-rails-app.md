@@ -410,10 +410,6 @@ bill.hobbies << programming; nick.hobbies << programming
 ### ActiveRecord. Many-to-Many through
 ```
 rails g model salary_range min_salary:float max_salary:float job:references
-rake db:migrate
-
-rails g migration create_hobbies_people person:references hobby:references
-# do not run 'rake db:migrate' till update db/migrate/20170521133616_create_hobbies_people.rb with 'id: false'
 ```
 
 ```ruby
@@ -463,6 +459,26 @@ programming = Hobby.create name: "Programming"
 bill.hobbies << programming; nick.hobbies << programming
 ```
 
+### ActiveRecord. Scopes
+Setup default behavior for the table-class using default scopes and named scopes
+```ruby
+# app/models/hobby.rb
+class Hobby < ActiveRecord::Base
+  has_and_belongs_to_many :people
+
+  default_scope { order :name }
+end
+```
+
+```ruby
+# app/models/person.rb
+class Person < ActiveRecord::Base
+  has_and_belongs_to_many :hobbies
+  
+  scope :ordered_by_age, -> { order age: :desc}
+  scope :starts_with, -> (starting_string){ where("first_name LIKE ?", "#{starting_string}%")}
+end
+```
 
 ### SQLite browser
 Install sqlitebrowser for DB view 
