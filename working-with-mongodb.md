@@ -18,4 +18,15 @@ Create 'test' database and updato sample data to 'zips' collection
 mongoimport --db test --collection zips --drop --file ~/Downloads/zips.json
 ```
 
+### Install required Gems
+Install following gems 
+```
+gem update -system
+gem install mongo
+gem install bson_ext
+```
+Use gem 
+```ruby
+require mongo
+```
 
