@@ -16,6 +16,7 @@ curl -O http://media.mongodb.org/zips.json
 Create 'test' database and updato sample data to 'zips' collection  
 ```
 mongoimport --db test --collection zips --drop --file ~/Downloads/zips.json
+mongoimport --db test --collection zips --drop --file ~/Downloads/zips.json --jsonArray # for array
 ```
 
 ### Install required Gems
