@@ -1,16 +1,10 @@
 # Working with MongoDB
 
 ### Install MongoDB
-Download and install following instructions 
-```
-https://www.mongodb.com/download-center#community
-```
+Download and install following instructions https://www.mongodb.com/download-center#community
 
 ### Shell Quick Reference
-Use mongo shell  
-```
-https://docs.mongodb.com/manual/reference/mongo-shell/
-```
+Use mongo shell https://docs.mongodb.com/manual/reference/mongo-shell/
 
 ### Download sample data
 Use link to download data  
