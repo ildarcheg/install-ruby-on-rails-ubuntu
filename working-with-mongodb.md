@@ -30,3 +30,27 @@ Use gem
 require mongo
 ```
 
+### Use MongoDB in 'irb'
+USe following basic commands
+```
+irb
+```
+
+```ruby
+require 'mongo'
+db = Mongo::Client.new('mongodb://localhost:27017')
+db = db.use('test')
+db.database.name # shows db name 'test'
+db.database.collection_names # shows collection names inside db 'test'
+db[:zips].find.first # returns first entry in 'zips' collection 'test' db
+```
+
+```ruby
+system('clear') # clear screen
+```
+
+```ruby
+Mongo::Logger.logger.level = ::Logger::INFO # turn debugger off
+Mongo::Logger.logger.level = ::Logger::DEBUG # turn debugger on
+```
+
