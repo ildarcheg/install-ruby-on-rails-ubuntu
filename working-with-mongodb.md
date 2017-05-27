@@ -94,3 +94,15 @@ p zips
 s=Solution.new
 pp s.sample
 ```
+
+### Sample Ruby class to work with MongoDB
+USe following code
+```ruby
+db[:zips].insert_one(:_id => "100", :city => "city01", :loc => [-76.05, 39.09], :pop => 4678, :state => "MD")
+db[:zips].find(:city => 'city01').count
+db[:zips].insert_many([
+	{:_id => "100", :city => "city01", :loc => [-76.05, 39.09], :pop => 4678, :state => "MD"},
+	{:_id => "101", :city => "city02", :loc => [-76.05, 39.09], :pop => 4678, :state => "MD"}
+])
+```
+
