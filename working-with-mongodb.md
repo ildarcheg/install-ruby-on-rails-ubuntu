@@ -221,3 +221,24 @@ end
 s=Solution.new
 race1=Solution.collection
 ```
+
+### Working with 'mongoid'
+Add to Gemfile and run 'bundle'
+```ruby
+gem 'mongoid', '~> 5.0.0'
+```
+Setup mongoid
+```
+rails g mongoid:config
+```
+
+```
+rails c
+mongo_client = Mongoid::Clients.default
+collection = mongo_client[:zips]
+```
+
+Clone sample app and look through
+```
+git clone https://github.com/jhu-ep-coursera/fullstack-course3-module1-zips.git
+```
