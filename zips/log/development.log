@@ -1,0 +1,108 @@
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-28 10:49:01 +0700
+Processing by ZipsController#index as HTML
+paginate({"controller"=>"zips", "action"=>"index", "sort"=>{}})
+getting all zips, prototype={}, sort={}, offset=0, limit=30
+getting all zips, prototype={}, sort={}, offset=0, limit=1
+  Rendered zips/index.html.erb within layouts/application (92.7ms)
+Completed 200 OK in 1994ms (Views: 1823.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-ad0b8ba8fa351b37f57070bd67baa7ad28cb478c5069ff14f932a8dbae261e62.css?body=1" for 127.0.0.1 at 2017-05-28 10:49:04 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2017-05-28 10:49:04 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2017-05-28 10:49:04 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2017-05-28 10:49:04 +0700
+
+
+Started GET "/zips/01001" for 127.0.0.1 at 2017-05-28 10:49:06 +0700
+Processing by ZipsController#show as HTML
+  Parameters: {"id"=>"01001"}
+getting zip 01001
+  Rendered zips/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 97ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zips/01001/edit" for 127.0.0.1 at 2017-05-28 10:49:08 +0700
+Processing by ZipsController#edit as HTML
+  Parameters: {"id"=>"01001"}
+getting zip 01001
+  Rendered zips/_form.html.erb (36.0ms)
+  Rendered zips/edit.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/zips/01001" for 127.0.0.1 at 2017-05-28 10:49:12 +0700
+Processing by ZipsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CtxVbabnG8LNw0XX7ykcuWDpfVnyZcnwE0qJnjNtD/rjJ4Xgy7KAxKI2Lu1DKg3m4oFe5S+24rJJpmyHXpzkHw==", "zip"=>{"id"=>"01001", "city"=>"AGAWAM-1", "state"=>"MA", "population"=>"15338"}, "commit"=>"Update Zip", "id"=>"01001"}
+getting zip 01001
+updating 01001: AGAWAM, MA, pop=15338 with {"id"=>"01001", "city"=>"AGAWAM-1", "state"=>"MA", "population"=>"15338"}
+Redirected to http://localhost:3000/zips/01001
+Completed 302 Found in 28ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/zips/01001" for 127.0.0.1 at 2017-05-28 10:49:12 +0700
+Processing by ZipsController#show as HTML
+  Parameters: {"id"=>"01001"}
+getting zip 01001
+  Rendered zips/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zips" for 127.0.0.1 at 2017-05-28 10:57:36 +0700
+Processing by ZipsController#index as HTML
+paginate({"controller"=>"zips", "action"=>"index", "sort"=>{}})
+getting all zips, prototype={}, sort={}, offset=0, limit=30
+getting all zips, prototype={}, sort={}, offset=0, limit=1
+  Rendered zips/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 80ms (Views: 70.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-05-28 11:24:35 +0700
+
+ActionController::RoutingError (No route matches [GET] "/login"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/ildar/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/ildar/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/ildar/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (35.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (113.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (49.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (331.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (3.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (96.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (5.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (152.2ms)

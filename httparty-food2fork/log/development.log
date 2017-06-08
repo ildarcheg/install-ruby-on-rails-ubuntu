@@ -1,0 +1,1063 @@
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 17:18:40 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 77ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 17:18:46 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 625ms (Views: 624.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 17:18:47 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 17:18:47 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 17:24:16 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (176.0ms)
+Completed 500 Internal Server Error in 325ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `recipe' for #<#<Class:0x007f400dd4a7e8>:0x007f400dd06a48>):
+    1: 
+    2: <p><% recipe %></p>
+  app/views/recipes/index.html.erb:2:in `_app_views_recipes_index_html_erb___3679876186007871409_69956543196020'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (3.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (6.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (158.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (4.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (259.4ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 203ms (Views: 201.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 17:24:46 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 17:26:20 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 99ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=%22swiss%22" for 127.0.0.1 at 2017-05-18 17:26:33 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"\"swiss\""}
+  Rendered recipes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 456ms (Views: 449.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=%27swiss%27" for 127.0.0.1 at 2017-05-18 17:26:41 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"'swiss'"}
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=swiss%20bag" for 127.0.0.1 at 2017-05-18 17:26:48 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"swiss bag"}
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=swiss%20bag" for 127.0.0.1 at 2017-05-18 17:37:51 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"swiss bag"}
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 69ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=swiss%20bag" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"swiss bag"}
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 116ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 17:38:29 +0700
+
+
+Started GET "/recipes/index?search=swiss%20bag" for 127.0.0.1 at 2017-05-18 19:24:39 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"swiss bag"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+LoadError (cannot load such file -- HTTParty):
+  app/models/recipe.rb:1:in `<top (required)>'
+  app/controllers/recipes_controller.rb:4:in `index'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (6.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (90.8ms)
+
+
+Started GET "/recipes/index?search=swiss%20bag" for 127.0.0.1 at 2017-05-18 19:24:52 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"swiss bag"}
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 870ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 19:24:53 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 19:24:53 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 19:24:53 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 19:24:53 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 19:24:53 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 19:24:53 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 19:24:53 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:25:58 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 611ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 19:54:35 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 46ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:54:41 +0700
+Processing by RecipesController#index as HTML
+Completed 500 Internal Server Error in 684ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (822: unexpected token at 'FORBIDDEN'):
+  app/models/recipe.rb:13:in `for'
+  app/models/recipe.rb:18:in `<top (required)>'
+  app/controllers/recipes_controller.rb:4:in `index'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (72.2ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:55:22 +0700
+Processing by RecipesController#index as HTML
+Completed 500 Internal Server Error in 638ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (822: unexpected token at 'FORBIDDEN'):
+  app/models/recipe.rb:13:in `for'
+  app/controllers/recipes_controller.rb:4:in `index'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/acf60534267240f0e9c6735a522482ae" for 127.0.0.1 at 2017-05-18 19:55:33 +0700
+
+
+Started POST "/__web_console/repl_sessions/acf60534267240f0e9c6735a522482ae/trace" for 127.0.0.1 at 2017-05-18 19:56:17 +0700
+
+
+Started POST "/__web_console/repl_sessions/acf60534267240f0e9c6735a522482ae/trace" for 127.0.0.1 at 2017-05-18 19:56:25 +0700
+
+
+Started POST "/__web_console/repl_sessions/acf60534267240f0e9c6735a522482ae/trace" for 127.0.0.1 at 2017-05-18 19:56:27 +0700
+
+
+Started POST "/__web_console/repl_sessions/acf60534267240f0e9c6735a522482ae/trace" for 127.0.0.1 at 2017-05-18 19:56:27 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:56:59 +0700
+Processing by RecipesController#index as HTML
+Completed 500 Internal Server Error in 932ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (822: unexpected token at 'FORBIDDEN'):
+  app/models/recipe.rb:13:in `for'
+  app/controllers/recipes_controller.rb:4:in `index'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.7ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:57:50 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 593ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:6: syntax error, unexpected keyword_and, expecting keyword_end
+'.freeze; and ;@output_buffer.to_s
+             ^
+/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:9: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/recipes/index.html.erb:6: syntax error, unexpected keyword_and, expecting keyword_end
+  app/views/recipes/index.html.erb:7: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/recipes/index.html.erb:9: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.1ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:58:05 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 922ms (Views: 316.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 19:58:06 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 19:58:06 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:06 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:06 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:06 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:06 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:06 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 728ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 19:58:31 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 19:59:19 +0700
+Processing by RecipesController#index as HTML
+Completed 500 Internal Server Error in 680ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (822: unexpected token at 'FORBIDDEN'):
+  app/models/recipe.rb:13:in `for'
+  app/controllers/recipes_controller.rb:4:in `index'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.8ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:01:19 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 868ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:01:20 +0700
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:01:20 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:01:20 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:01:20 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:01:20 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:01:20 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:01:20 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:02:56 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 601ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:02:57 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1125ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:02:58 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:02:58 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:02:58 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:02:59 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:02:59 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:02:59 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:02:59 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:05:41 +0700
+Processing by RecipesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ildar/jhu/recipefinder/app/models/recipe.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+    {}"#{@key_value} #{res}"
+       ^):
+  app/models/recipe.rb:14: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  app/controllers/recipes_controller.rb:4:in `index'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:06:05 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 951ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:06:06 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:06:06 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:06:06 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:06:06 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:06:06 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:06:06 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:06:06 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:08:38 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 612ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:08:38 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:38 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:08:38 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:38 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:38 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:38 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:39 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:08:40 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 767ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:08:41 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:08:41 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:41 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:41 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:41 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:41 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:08:41 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:09:59 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:11:19 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 51ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:11:24 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 398ms (Views: 394.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:11:42 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6196ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:11:48 +0700
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:11:48 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:11:48 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:11:48 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:11:48 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:11:48 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:11:48 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:12:05 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1264ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:12:32 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1191ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:12:33 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:12:33 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:12:33 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:12:33 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:12:33 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:12:33 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:12:33 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:14:15 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1223ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:14:16 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:14:16 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:14:16 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:14:16 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:14:16 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:14:16 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:14:16 +0700
+
+
+Started GET "/recipes/index?search=%27chicken%27" for 127.0.0.1 at 2017-05-18 20:14:39 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"'chicken'"}
+  Rendered recipes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1640ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=%27fffffffff%20fdddd%20ffff%27" for 127.0.0.1 at 2017-05-18 20:15:07 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"'fffffffff fdddd ffff'"}
+  Rendered recipes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1768ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=%27fffffffff%20fdddd%20ffff%27" for 127.0.0.1 at 2017-05-18 20:19:40 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"'fffffffff fdddd ffff'"}
+  Rendered recipes/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 2855ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+..._to recipe["source_url"] recipe["title"] );@output_buffer.sa...
+...                               ^):
+  app/views/recipes/index.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.3ms)
+
+
+Started GET "/recipes/index?search=%27fffffffff%20fdddd%20ffff%27" for 127.0.0.1 at 2017-05-18 20:19:57 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"'fffffffff fdddd ffff'"}
+  Rendered recipes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5721ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:20:02 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:20:02 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:20:02 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:20:02 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:20:02 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:20:02 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:20:02 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:20:10 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 1144ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:21:45 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2357ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:21:47 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:21:47 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:21:47 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:21:47 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:21:47 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:21:47 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:21:47 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:22:29 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 2074ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:22:31 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:22:31 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:22:31 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:22:31 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:22:31 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:22:31 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:22:31 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:26:40 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 6209ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:26:46 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:26:46 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:26:46 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:26:46 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:26:46 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:26:46 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:26:46 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:27:12 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1225ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:27:14 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:27:14 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:27:14 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:27:14 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:27:14 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:27:14 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:27:14 +0700
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:27:54 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 1210ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:16: unknown regexp options - td
+/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:17: syntax error, unexpected '<'
+      <td>'.freeze;@output_buffer.ap...
+       ^
+/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:18: unknown regexp options - tr
+/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:20: unterminated regexp meets end of file
+/home/ildar/jhu/recipefinder/app/views/recipes/index.html.erb:20: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/recipes/index.html.erb:16: unknown regexp options - td
+  app/views/recipes/index.html.erb:17: syntax error, unexpected '<'
+  app/views/recipes/index.html.erb:18: unknown regexp options - tr
+  app/views/recipes/index.html.erb:20: unterminated regexp meets end of file
+  app/views/recipes/index.html.erb:20: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.1ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.9ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.7ms)
+
+
+Started GET "/recipes/index" for 127.0.0.1 at 2017-05-18 20:28:05 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 6328ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:28:11 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:28:11 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:28:11 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:28:11 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:28:11 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:28:11 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:28:11 +0700
+
+
+Started GET "/recipes/index?search=mocha" for 127.0.0.1 at 2017-05-18 20:28:59 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"mocha"}
+  Rendered recipes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 1369ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes/index?search=mocha" for 127.0.0.1 at 2017-05-18 20:29:56 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"mocha"}
+  Rendered recipes/index.html.erb within layouts/application (85.4ms)
+Completed 200 OK in 1638ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:29:58 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:29:58 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:29:58 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:29:58 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:29:58 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:29:58 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:29:58 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:30:44 +0700
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: 'recipes/index'` to `controller: 'recipes/index'`. (called from block in <top (required)> at /home/ildar/jhu/recipefinder/config/routes.rb:4)
+
+ArgumentError (Missing :action key on routes definition, please check your routes.):
+  config/routes.rb:4:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/ildar/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:30:54 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 1386ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:30:55 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:30:55 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:30:55 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:30:55 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:30:55 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:30:55 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:30:55 +0700
+
+
+Started GET "/?search=mocha" for 127.0.0.1 at 2017-05-18 20:46:37 +0700
+Processing by RecipesController#index as HTML
+  Parameters: {"search"=>"mocha"}
+  Rendered recipes/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 1706ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/recipes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-05-18 20:46:38 +0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-05-18 20:46:38 +0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-05-18 20:46:38 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2017-05-18 20:46:38 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2017-05-18 20:46:38 +0700
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-05-18 20:46:38 +0700
+
+
+Started GET "/assets/recipes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-05-18 20:46:38 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:46:51 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 1228ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:47:10 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 1767ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:47:12 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 1226ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:47:13 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 1240ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-18 20:47:14 +0700
+Processing by RecipesController#index as HTML
+  Rendered recipes/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 1184ms (Views: 29.9ms | ActiveRecord: 0.0ms)
