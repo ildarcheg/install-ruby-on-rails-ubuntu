@@ -15,3 +15,22 @@ Open Firefox and run.
 ```
 http://localhost:3000
 ```
+
+## Sublime and SSH
+On the local machine install the `rsub` package in Sublime.
+
+Then add host entries in `~/.ssh/config` for each server you'll be using `rsub` on.
+
+```
+Host your_remote_server.com
+  RemoteForward 52698 127.0.0.1:52698
+```
+
+On the server:
+
+```
+sudo wget -O /usr/local/bin/rsub https://raw.github.com/aurora/rmate/master/rmate
+sudo chmod +x /usr/local/bin/rsub
+```
+
+Now you can run `rsub text_file.txt` to edit in Sublime.
