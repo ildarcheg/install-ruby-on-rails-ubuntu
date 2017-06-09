@@ -17,20 +17,31 @@ http://localhost:3000
 ```
 
 ## Sublime and SSH
-On the local machine install the `rsub` package in Sublime.
 
-Then add host entries in `~/.ssh/config` for each server you'll be using `rsub` on.
-
+Install the rsub plugin for ST, which is available through Package Control too.
+Add a remote forwarding line under the right host in your ~/.ssh/config file to enable connection:
 ```
-Host your_remote_server.com
+Host myserver
+  Hostname 123.45.67.89
   RemoteForward 52698 127.0.0.1:52698
 ```
-
-On the server:
-
+SSH in to your remote: 
 ```
-sudo wget -O /usr/local/bin/rsub https://raw.github.com/aurora/rmate/master/rmate
+ssh username@myserver
+```
+Download rmate in rsub folder: 
+```
+curl https://raw.githubusercontent.com/aurora/rmate/master/rmate > rsub
+```
+Move it in place: 
+```
+sudo mv rsub /usr/local/bin 
+```
+Make it executable: 
+```
 sudo chmod +x /usr/local/bin/rsub
 ```
-
-Now you can run `rsub text_file.txt` to edit in Sublime.
+Try: 
+```
+rsub .profile 
+```
