@@ -77,10 +77,10 @@ rbenv help | grep install
 
 echo -e "\n- - - - - -\n"
 echo "install a Ruby version (could be others)"
-rbenv install -v 2.2.3
+rbenv install -v 2.3.3
 echo -e "\n- - - - - -\n"
 echo "set the global version of Ruby to use"
-rbenv global 2.2.3
+rbenv global 2.3.3
 ruby -v
 
 echo -e "\n- - - - - -\n"
@@ -90,12 +90,26 @@ gem install bundler
 
 echo -e "\n- - - - - -\n"
 echo "this step will take a ~5min to complete (as it warns)"
-gem install rails -v 4.2.3
+gem install rails -v 4.2.6
 rails -v
 
 echo -e "\n- - - - - -\n"
 echo "install shims for newly installed Ruby gems that provide commands"
 rbenv rehash
+
+echo -e "\n- - - - - -\n"
+echo "install rails-api"
+gem install rails-api -v 0.4.0 --no-ri --no-doc
+rails-api -v
+gem uninstall railties -v 5.0.1
+
+echo -e "\n- - - - - -\n"
+echo "install shims for newly installed Ruby gems that provide commands"
+rbenv rehash
+
+echo -e "\n- - - - - -\n"
+echo "install bundler"
+gem install bundler --no-ri --no-doc
 
 # Install additional components
 
@@ -115,13 +129,44 @@ sudo mv $PHANTOM_JS /usr/local/share
 sudo ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin
 phantomjs --version
 
+echo -e "\n- - - - - -\n"
+echo "install postgresql"
+sudo apt-get install -y postgresql
+sudo service postgresql start
+sudo service --status-all
+
+echo -e "\n- - - - - -\n"
+echo "install mongodb"
+sudo apt-get install -y mongodb
+sudo service mongodb start
+sudo service --status-all
+
+echo -e "\n- - - - - -\n"
+echo "install imagemagick"
+sudo apt-get install -y imagemagick
+sudo imagemagick --version
+
+
 # inspect installation
 tree ~/ -L 1
 tree ~/.rbenv -L 1
 
-echo -e "\n- - - - - -\n"
-echo "Create and run new Rails app"
-cd /tmp
-rails new test_install
-cd test_install
-rails server
+
+#echo -e "\n- - - - - -\n"
+#echo "Create and run new Rails app"
+#cd /tmp
+#rails new test_install
+#cd test_install
+#rails server
+
+# CHECK
+
+git clone https://github.com/jhu-ep-coursera/capstone_demoapp.git module1
+cd module1
+git checkout module2.start
+git checkout -b module1
+bundle
+bundle exec rake db:create
+bundle exec rake db:migrate
+bundle exec rake db:migrate RAILS_ENV=test
+bundle exec rake 
